@@ -11,7 +11,7 @@ public:
 
     Computer();
     virtual char makeMove();
-    void reset();
+    virtual void reset();
 };
 
 #endif //COMPUTER_H
