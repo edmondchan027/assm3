@@ -11,17 +11,17 @@ char PaperDoll::makeMove(){
     switch(phase){
 
         case 0:
-        move='R';
+        move='P';
         phase=1;
         break;
 
         case 1:
-        move='P';
+        move='S';
         phase=2;
         break;
 
         case 2:
-        move='P';
+        move='S';
         phase=0;
         break;
     }
