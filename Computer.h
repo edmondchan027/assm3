@@ -10,7 +10,8 @@ char move;
 public:
 
     Computer();
-
+    virtual char makeMove();
+    void reset();
 };
 
 #endif //COMPUTER_H
