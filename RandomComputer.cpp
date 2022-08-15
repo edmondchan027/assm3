@@ -24,4 +24,4 @@ char RandomComputer::makeMove(){
 };
 
 void RandomComputer::reset(){
-}
+};
