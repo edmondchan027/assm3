@@ -20,7 +20,7 @@ char RandomComputer::makeMove(){
         case 2:
         return 'P';
         break;
-    };
+    }
 };
 
 void RandomComputer::reset(){
