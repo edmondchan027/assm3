@@ -14,19 +14,20 @@
         short p1_score=0;
         short p2_score=0;
 
+        for(int i=0;i<5;i++){
+            switch((int) r.refGame(p1,p2)){
+            case 'W':
+            p1_score++;
+            break;
 
-        switch((int) r.refGame(p1,p2)){
-        case 'W':
-        p1_score++;
-        break;
+            case 'L':
+            p2_score++;
+            break;
 
-        case 'L':
-        p2_score++;
-        break;
+            case 'T':
+            break;
 
-        case 'T':
-        break;
-
+            }
         }
 
         if(p1_score>=p2_score){
