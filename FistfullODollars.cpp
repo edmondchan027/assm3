@@ -11,17 +11,17 @@ char FistfullODollars::makeMove(){
     switch(phase){
 
         case 0:
-        move='P';
+        move='R';
         phase=1;
         break;
 
         case 1:
-        move='S';
+        move='P';
         phase=2;
         break;
 
         case 2:
-        move='S';
+        move='P';
         phase=0;
         break;
     }
