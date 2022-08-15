@@ -3,6 +3,10 @@
 #include "Computer.h"
 
 class RandomComputer : public Computer{
+private:
+
+short phase;
+
 public:
 
     RandomComputer();
