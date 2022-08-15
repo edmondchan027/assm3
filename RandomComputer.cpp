@@ -1,27 +1,34 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 #include "Computer.h"
 #include "RandomComputer.h"
 
 RandomComputer::RandomComputer(){
+    phase=0;
 };
 
 char RandomComputer::makeMove(){
-    srand(time(0));
-    switch(rand()%3){
+    srand(time(0)+phase);
+    switch((rand() % 3)){
         case 0:
-        return 'S';
+        move = 'S';
         break;
 
         case 1:
-        return 'R';
+        move = 'R';
         break;
 
         case 2:
-        return 'P';
+        move = 'P';
         break;
+
     }
+    phase++;
+    return move;
+
 };
 
 void RandomComputer::reset(){
+    phase=0;
 };
